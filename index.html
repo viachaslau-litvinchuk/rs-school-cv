@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>cv</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='index.js'></script>
+<link rel="icon" href="assets/smileFavicon.ico">
+</head>
+<body>
+<header class="header">
+<div class="container">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#codeExample" class="nav-link">Code example</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main class="main main-container">
+    <div class="container">
+        <section class="section" id="profile">
+            <h1 class="section-title">Profile</h1>
+            <p class="profile-text">
+                <img src="./assets/img/avatar.jpg" alt="avatar">
+                <p>Viachaslau Litvinchuk</p>
+                <p>Software Developer</p>
+            </p>
+        </section>
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="contacts-list">
+                <li class="contacts-list-item">Email: <a href="#contacts">viachaslau@gmail.com</a></li>
+                <li class="contacts-list-item">Linkedin: <a href="https://www.linkedin.com/in/viachaslau-litvinchuk-100161206/">viachaslau-litvinchuk</a></li>
+                <li class="contacts-list-item">Discord: <a href="#contacts">@viachaslau-litvinchuk</a></li>
+            </ul>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p class="cv-text">
+                SAP HANA developer with 1+ year of IT experience.
+                My strengths include analytical and communication skills, as well as the ability to collaborate and work as a team. I'm highly motivated and well skilled specialist. Highly self-organized and work well with a customer and project team to solve problems.
+                Worked successfully in multicultural environment.
+            </p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <p class="cv-text">
+                Experience in working with SAP HANA Platform (XS/XSA), SAP BW/4HANA, SAP Lumira Designer, SAP Lumira Discovery, SAP Analytics Cloud.
+                Have practical skills in SQL, SAP HANA database modeling and development, SAP HANA Security, JavaScript/TypeScript (Node.js, SAPUI5).
+                Skill in utilizing Git, Docker.
+            </p>
+        </section>
+        <section class="section" id="codeExample">
+            <h2 class="section-title">Code Example</h2>
+            <pre>There is a solution of <a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/javascript">Maximum subarray sum</a> task:
+                <code>
+                    const maxSequence = function(arr){
+                        let bestSum = 0
+                            let currentSum = 0
+                            for (let x of arr) {
+                            currentSum = Math.max(0, currentSum + x);
+                            bestSum = Math.max(bestSum, currentSum);
+                            }  
+                            return bestSum
+                        }
+                </code>
+            </pre>
+        </section>
+        <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <ul class="experience-list">
+                <li class="experience-list-item">
+                    <p>EPAM SYSTEMS</p>
+                    <ul>
+                        <li>Project Role: Junior Developer</li>
+                        <li>Customer: multinational software corporation that develops enterprise software to manage business operations and customer relations.</li>
+                        <li>Project: Development and L2-L3 support of the Project Calendar and Financial Planning tools  and used for project planning, monitoring and execution.</li>
+                        <li>
+                            Participation:
+                            <ul>
+                                <li>Implementation of required SAP HANA stored procedures and table functions</li>
+                                <li>Development of Calculation Views</li>
+                                <li>Providing unit tests as an essential part of development process</li>
+                                <li>Performing bug fixes and refactoring</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Tools:
+                            <ul>
+                                <li>Git</li>
+                                <li>VS Code</li>
+                                <li>SAP Web IDE</li>
+                                <li>Swagger</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Technologies:
+                            <ul>
+                                <li>Node.js</li>
+                                <li>TypeScript</li>
+                                <li>Jest</li>
+                                <li>NestJS</li>
+                                <li>SQLScript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="experience-list-item">
+                    <p>EPAM SYSTEMS</p>
+                    <ul>
+                        <li>Project Role: Junior Developer</li>
+                        <li>Project: Training Project "Online Store". The project to create reporting on basis of HANA Model.</li>
+                        <li>
+                            Participation:
+                            <ul>
+                                <li>Analysis of business problem</li>
+                                <li>HANA modelling using CDS</li>
+                                <li>Development of back-end services</li>
+                                <li>Development of front-end services</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Tools:
+                            <ul>
+                                <li>Git</li>
+                                <li>VS Code</li>
+                                <li>SAP Web IDE</li>
+                                <li>Docker</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Technologies:
+                            <ul>
+                                <li>Node.js</li>
+                                <li>SAPUI5</li>
+                                <li>Jest</li>
+                                <li>CDS</li>
+                                <li>SQLScript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <ul class="education-list">
+                <li class="education-list-item">2021 - EPAM SAP Lab</li>
+                <li class="education-list-item">2020 - EPAM Upskill Lab</li>
+                <li class="education-list-item">2018 - Francysk Skaryna Gomel State University. Master in Geography</li>
+                <li class="education-list-item">2015 - Francysk Skaryna Gomel State University. Bachelor in Ecology</li>
+            </ul>
+        </section>
+        <section class="section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <ul class="languages-list">
+                <li class="languages-list-item">English - B1+</li>
+                <li class="languages-list-item">Belarusian - Native</li>
+                <li class="languages-list-item">Russian - Native</li>
+            </ul>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <p>Georgia 2022</p>
+    </div>
+</footer>
+</body>
+</html>
