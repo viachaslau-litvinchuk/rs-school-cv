@@ -20,6 +20,14 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
+.greating {
+  font-weight: 700;
+}
+
 body {
   min-height: 100vh;
   border: 1px solid green;
@@ -35,6 +43,15 @@ body {
   color: #4d2323;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #829985;
+}
+
 .section-title {
   font-size: 20px;
   font-weight: 400;
@@ -43,56 +60,100 @@ body {
   color: #829985;
 }
 
-html {
-    scroll-behavior: smooth; 
-}
-
-.greating {
-    font-weight: 700;
-}
-
-.header {
-  background-color: #829985;
-}
-
-.main {
-
-}
-
-.footer {
-    
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
 .nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
 }
 
 .nav-link {
-    color: white;
-    padding: 0 20px;
-    line-height: 50px;
-    text-decoration: none;
-} */
+  color: white;
+  padding: 50px 20px;
+  line-height: 50px;
+  text-decoration: none;
+}
 
 .nav-link:hover {
-  color: gray;
-  transition: color 0.3s;
+  position: relative;
+  background-color: white;
+  border-radius: 0.5ch;
+  color:#829985;
+  transition: background-color 0.1s;
   cursor: pointer;
+}
+
+.main {
+  margin-bottom: auto;
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section {
-  width: 50%;
+  width: calc(50% - 20px);
+  padding: 10px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #672f2f;
 }
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 30px 35px;
+  border-bottom: 15px solid #d7d1c9;
+}
+
+.pre {
+  padding: 0;
+  margin: 0;
+}
+
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;  
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #829985;
+  font-size: small;
+  font-weight: 300;
+  color: #fff;
+}
+
+.section-profile-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  filter: grayscale(0.2) brightness(1.05);
+  transition: .3s;
+}
+
+.section-profile-logo:hover {
+  border-color: #829985;
+  border-width: 10px;
+}
+
+.contacts-list-item {
+  list-style: none;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+

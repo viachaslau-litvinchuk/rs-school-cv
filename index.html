@@ -17,7 +17,7 @@
             <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
             <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
             <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#codeExample" class="nav-link">Code example</a></li>
+            <li class="nav-item"><a href="#codeExample" class="nav-link">Code</a></li>
             <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
             <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
             <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
@@ -26,19 +26,18 @@
 </div>
 </header>
 <main class="main main-container">
-    <div class="container">
-        <section class="section" id="profile">
-            <h1 class="section-title">Profile</h1>
-            <p class="profile-text">
-                <img src="./assets/img/avatar.jpg" alt="avatar">
-                <p>Viachaslau Litvinchuk</p>
-                <p>Software Developer</p>
-            </p>
+    <div class="container main-container">
+        <section class="section section-profile" id="profile">
+                    <img src="./assets/img/avatar.jpg" alt="avatar" class="section-profile-logo">
+                <div class="section-profile-title">
+                    <h1>STEFAN LITVINCHUK</h1>
+                    <h3>SOFTWARE DEVELOPER</h3>
+                </div>  
         </section>
         <section class="section" id="contacts">
             <h2 class="section-title">Contacts</h2>
             <ul class="contacts-list">
-                <li class="contacts-list-item">Email: <a href="#contacts">viachaslau@gmail.com</a></li>
+                <li class="contacts-list-item">Email: <a href="mailto:viachaslau@gmail.com">viachaslau@gmail.com</a></li>
                 <li class="contacts-list-item">Linkedin: <a href="https://www.linkedin.com/in/viachaslau-litvinchuk-100161206/">viachaslau-litvinchuk</a></li>
                 <li class="contacts-list-item">Discord: <a href="#contacts">@viachaslau-litvinchuk</a></li>
             </ul>
@@ -61,17 +60,18 @@
         </section>
         <section class="section" id="codeExample">
             <h2 class="section-title">Code Example</h2>
-            <pre>There is a solution of <a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/javascript">Maximum subarray sum</a> task:
+            There is a solution of <a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/javascript">Maximum subarray sum</a> task:
+            <pre>
                 <code>
-                    const maxSequence = function(arr){
-                        let bestSum = 0
-                            let currentSum = 0
-                            for (let x of arr) {
-                            currentSum = Math.max(0, currentSum + x);
-                            bestSum = Math.max(bestSum, currentSum);
-                            }  
-                            return bestSum
-                        }
+const maxSequence = function(arr){
+    let bestSum = 0
+        let currentSum = 0
+        for (let x of arr) {
+        currentSum = Math.max(0, currentSum + x);
+        bestSum = Math.max(bestSum, currentSum);
+        }  
+        return bestSum
+    }
                 </code>
             </pre>
         </section>
@@ -172,7 +172,7 @@
 </main>
 <footer class="footer">
     <div class="container">
-        <p>Georgia 2022</p>
+        <p class="footer-text">Georgia 2022</p>
     </div>
 </footer>
 </body>
