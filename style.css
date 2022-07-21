@@ -1,0 +1,113 @@
+@media screen and (max-width: 1440px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@font-face {
+    font-family: "Red Hat Text";
+    src: url(assets/fonts/RedHatText-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Magra";
+    src: url(assets/fonts/Magra-Bold.ttf);
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: 1440px 765px;
+    background-position: 50% 0%;
+}
+
+.header {
+    background-color: rgba(242, 120, 92, 0.7);
+    width: 1440px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 1.5em;
+}
+
+.nav-link {
+    box-sizing: border-box;
+    padding: 0px 21px;
+    line-height: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16;
+    font-family: "Red Hat Text";
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.company-logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.company-logo-text {
+    font-family: "Magra";
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.login-button {
+    background-color:rgb(13,96,111);
+    color: rgb(255, 255, 255);
+    width: 103px;
+    height: 41px;
+    border-radius: 10pt;
+    align-self: center;
+    font-family: "Red Hat Text";
+    font-size: 16px;
+    border-width: 0px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.login-button:active {
+    box-shadow: 0px 2px 3px rgb(13,96,111, 0.16);
+    transition: .3s;
+}
+
+.footer {
+    padding: 40px;
+}
